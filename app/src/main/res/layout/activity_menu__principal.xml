@@ -6,13 +6,84 @@
     android:layout_height="match_parent"
     tools:context="me.fr.appli_de_ouf.Menu_Principal">
 
-    <TextView
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="8dp">
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/bakground"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_alignLeft="@+id/profil_img_btn"
+                app:srcCompat="@color/colorAccent" />
+
+            <ImageButton
+                android:id="@+id/profil_img_btn"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentTop="true"
+                app:srcCompat="@mipmap/ic_launcher" />
+
+            <ImageButton
+                android:id="@+id/stats_img_btn"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="false"
+                app:srcCompat="@drawable/statistiques" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/choix_exo_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choisir un exercice" />
+
+        <Button
+            android:id="@+id/travailler_coup_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Travailler un coup" />
+
+        <Button
+            android:id="@+id/seance_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Faire une séance d'une heure" />
+
+        <Button
+            android:id="@+id/match_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jouer un match" />
+
+        <Button
+            android:id="@+id/mode_libre_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mode libre " />
+
+        <Button
+            android:id="@+id/teste_toi_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Teste toi !" />
+
+        <Button
+            android:id="@+id/gestion_app_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gestion des appareils connectés" />
+
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>
